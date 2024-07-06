@@ -3,10 +3,11 @@
 }
 
 body {
-    background: #1a1a1a;
+    background: #1c1e26;
     font-family: sans-serif;
     max-width: 500px;
     height: 100vh;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,6 +46,11 @@ a {
 }
 
 .qr-text::placeholder {
+    color: #8b92b7;
+    font-weight: 500;
+}
+
+#qr-code {
     height: 500px;
     width: 500px;
     display: flex;
