@@ -12,7 +12,7 @@ qrText.addEventListener("input", handleQRText);
 sizes.addEventListener("change", handleSize);
 shareBtn.addEventListener("click", handleShare);
 
-const defaultURL = "jesdebrito.com";
+const defaultUrl = "https://jessdebrito.com";
 let colorLight = "#fff",
     colorDark = "#000",
     text = defaultUrl,
