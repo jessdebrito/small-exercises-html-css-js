@@ -120,8 +120,18 @@ body {
     width: 16px;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 8.2s ease-in;
 }
 
 .btn-generate {
+    background-color: #273363;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: #fff;
     margin-top: 24px;
 }
