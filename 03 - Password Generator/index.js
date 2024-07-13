@@ -41,16 +41,16 @@ const createPassword = (options) => {
   }
 
   if (charset.length === 0) {
-    alert('Please select at least one character type');
-    return '';
-  };
-
-  let password = '';
-  for(let i = 0; i < options.length; i++) {
-    const randomIndex = Math.floor(Math.random() * charset.length)
-    password += charset.charAt(randomIndex)
+    alert("Please select at least one character type");
+    return "";
   }
-  return password; 
+
+  let password = "";
+  for (let i = 0; i < options.length; i++) {
+    const randomIndex = Math.floor(Math.random() * charset.length);
+    password += charset.charAt(randomIndex);
+  }
+  return password;
 };
 
 generateButton.addEventListener("click", () => {
@@ -64,4 +64,23 @@ generateButton.addEventListener("click", () => {
 
   const password = createPassword(passwordOptions);
   passwordDisplay.textContent = password;
-}); 
+});
+
+
+
+
+copyButton.addEventListener("click", () => {
+    const textarea = document.createElement("textarea");
+    const password = passwordDisplay.textContent;
+  
+    if (!password) {
+      return;
+    }
+  
+    textarea.value = password;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    textarea.remove();
+    alert("Password copied to clipboard");
+  });
