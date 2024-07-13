@@ -44,6 +44,7 @@ body {
 .pasword-copy {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .options-container {
     background: linear-gradient(9deg, rgba(36,35,44,1) 0%, rgba(29,29,29,1) 100%);
