@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 * {
     margin: 0;
@@ -29,7 +29,8 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    background: linear-gradient(9deg, rgba(36,35,44,1) 0%, rgba(29,29,29,1) 100%);    width: 540px;
+    background: linear-gradient(9deg, rgba(36, 35, 44, 1) 0%, rgba(29, 29, 29, 1) 100%);
+    width: 540px;
     height: 88px;
     border-radius: 10px;
     padding-inline: 32px;
@@ -46,8 +47,9 @@ body {
     border: none;
     cursor: pointer;
 }
+
 .options-container {
-    background: linear-gradient(9deg, rgba(36,35,44,1) 0%, rgba(29,29,29,1) 100%);
+    background: linear-gradient(9deg, rgba(36, 35, 44, 1) 0%, rgba(29, 29, 29, 1) 100%);
     width: 540px;
     display: flex;
     flex-direction: column;
@@ -57,6 +59,7 @@ body {
 
 .text {
     font-size: 18px;
+    
 }
 
 .length-container {
@@ -68,6 +71,7 @@ body {
 
 .length {
     color: #293b81;
+
     font-size: 32px;
 }
 
@@ -105,7 +109,7 @@ body {
 }
 
 .input-container input {
-    --webkit-apparance:none;
+    --webkit-apparance: none;
     appearance: none;
     background-color: #fff;
     height: 16px;
@@ -113,15 +117,16 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+
 .input-container input:checked {
-    --webkit-apparance:none;
+    --webkit-apparance: none;
     appearance: none;
     background-color: #273363;
     height: 16px;
     width: 16px;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 8.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .btn-generate {
